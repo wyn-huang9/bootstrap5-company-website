@@ -53,14 +53,14 @@
 3. 缩放浏览器窗口，测试多端响应式效果
 
 ## 仓库目录说明
-bootstrap5‑company‑website/
-├─ index.html          # 主项目：Bootstrap5响应式企业官网首页
-├─ README.md           # 项目说明文档
-└─ demo/               # 课堂练习集合
-├── form-express-demo.html
-├── hobby-card-demo.html
-├── portfolio-demo.html
-├── product-card-demo.html
-├── second-hand-book-index.html
-├── second-hand-book-v2.html
-└── second-hand-login.html
+bootstrap5-company-website/
+├─ index.html                 # 主项目：Bootstrap5 响应式企业官网首页
+├─ README.md                  # 项目说明文档
+└─ demo/                      # 课堂练习集合
+├─ form-express-demo.html
+├─ hobby-card-demo.html
+├─ portfolio-demo.html
+├─ product-card-demo.html
+├─ second-hand-book-index.html
+├─ second-hand-book-v2.html
+└─ second-hand-login.html
