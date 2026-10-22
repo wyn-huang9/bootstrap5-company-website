@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+		body{background-color:#FFFEE2;}
+		.maxbox{}
+		ul {
+			list-style: none;
+		}
+		a {text-decoration: none;}
+		a:hover {color:#E53737;}
+		
+		.header{
+			display: flex;
+			align-items: center;
+			justify-content:space-between;
+			padding: 10px 20px;
+		}
+		.header .name{
+			color: #FF873A;
+			font-size: 28px;
+			font-weight: bolder;
+		}
+		.header .information{
+			text-align: right;
+		}
+		.header .information .tel{
+			color: #FF873A;
+			font-weight: bolder;
+			font-size:23px;
+		}
+		.daohang{
+			background-color: #FF873A;
+			display: flex;
+			padding: 5px 50px;
+		}
+		.daohang a{
+			color: white;
+			padding: 5px 20px;
+		}
+		.daohang a:hover{
+			color: #FF4355;
+			background-color: #F7F5CB;
+		}
+		.neirong{
+			display:flex;
+			padding: 20px;
+		}
+		.left{
+			width: 200px;
+		}
+		.left .box{
+			margin-bottom:20px;
+			border: solid #EEEEEE;
+			padding: 4px 8px;
+			height:150px;
+		}
+		.left .box h3{
+			margin-bottom:10px;
+		}
+		.left .box p{
+			color:#ADADAD;
+			font-size: 15px;
+			line-height: 25px;
+		}
+		.left .box .stars{color: #FFEA64}
+		.left.box ul{
+			list-style: none;
+		}
+		.left .box ul li{
+			color:#ADADAD;
+			font-size: 15px;
+			line-height: 25px;
+		}
+		.zhong{
+			padding:0 20px;
+			flex: 1;
+		}
+		.zhong .miao{
+			width: auto;
+			height:150px;
+		}
+		.zhong  img{
+			height:150px;
+			width: 100%;
+		}
+		.zhong .box1{
+			margin-bottom:20px;
+			border: solid #EEEEEE;
+			padding: 4px;
+			height:75px;
+			display: flex;
+		}
+		.zhong .box1 .tu{
+			height: 50px;
+			width: 50px;
+			margin: 5px;
+		}
+		.zhong .box1 .tu img{
+			height: 50px;
+			width: 50px;
+			border-radius: 4px;
+		}
+		.zhong .box1 .inf{flex: 1;}
+		.zhong .box1 .inf b{font-weight: bold;}
+		.zhong .box1 .inf p{
+			color:#ADADAD;
+			font-size: 13px;
+			line-height: 25px;}
+		.zhong .box1 .inf .price{font-weight: bold;color: red;font-size: 15px}
+		.right{
+			padding: 20px;
+			width: 200px;
+		}
+		.right .box{
+			margin-bottom:20px;
+			border: solid #EEEEEE;
+			padding: 4px;
+			height:150px;
+		}
+		 .right .box ul {
+            list-style: none;
+        }
+        .right .box ul li {
+            font-size: 14px;
+            line-height: 28px;
+            color: #666;
+        }
+ 
+    </style>
+</head>
+
+<body bgcolor="#F7F7F7">
+  <div class="maxbox">
+	<div class="header">
+		<div class="name">书香校园二手网</div>
+		<div class="information">
+			校园安全中心<br>
+			<span class="tel">666-888-6666</span>
+		</div>
+	</div>
+	<div class="daohang">
+			<a href="#">首页</a>
+			<a href="#">教材专区</a>
+			<a href="#">考研材料</a>
+			<a href="#">电子产品</a>
+			<a href="#">求购信息</a>
+			<a href="#">退出登录</a>
+	</div>
+	  
+	 <div class="neirong">
+	  	 <div class="left">
+		 	<div class="box">
+			   <h3>我的状态</h3>
+				<p>欢迎您：</p>
+                <p>信用等级：<span class="stars">★★★★★</span></p>
+                <p>待处理订单：0</p>
+			   
+			</div>
+			<div class="box">
+			 	<h3>图书分类</h3>
+				<ul>
+                    <li>计算机/软件</li>
+                    <li>外语/雅思</li>
+                    <li>经管/金融</li>
+                    <li>建筑/设计</li>
+                </ul>
+			</div>
+		 </div>
+		 <div class="zhong">
+			 <div class="miao"><img src="../网页制作/二手网/background.png"></div>
+				<h4>热门推荐</h4>
+			 	<div class="box1">
+					<div class="tu"><img src="../网页制作/二手网/java.png"></div>
+					<div class="inf">
+						<b>《Java核心技术》</b>
+						<p>大三学长退役，书很新，送笔记。</p>
+						<p class="price">¥45.00</p>
+					</div>
+			 	</div>
+				<div class="box1">
+				 <div class="tu"><img src="../网页制作/二手网/math.png"></div>
+				 	<div class="inf">
+                        <b>《高等数学》</b>
+                        <p>考研必备，重点已划，不做笔记也能考高分！</p>
+                        <p class="price">¥15.00</p>
+                    </div>
+			    </div>
+			 </div>
+		 
+		 <div class="right">
+		 	<div class="box">
+                <h3>最新公告</h3>
+                <ul>
+                    <li>[通知]系统维护公告...</li>
+                    <li>[活动]线下读书日...</li>
+                </ul>
+            </div>
+			<div class="box">
+			 <h3>求购榜</h3>
+                <ul class="rank-list">
+                    <li><span>1 </span>二手 Kindle</li>
+                    <li><span>2 </span>iPad air4</li>
+                    <li><span>3 </span>考研红宝书</li>
+                    <li><span>4 </span>卡西欧计算器</li>
+				</ul>
+			</div>
+		 </div>
+	 </div>
+  </div>
+</body>
+</html>

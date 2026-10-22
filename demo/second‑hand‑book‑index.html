@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>书香校园二手网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+        /* 顶部头部样式 */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #fff;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #f60;
+        }
+        .header .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .header .contact {
+            text-align: right;
+            font-size: 14px;
+            color: #666;
+        }
+        .header .contact .phone {
+            font-size: 18px;
+            color: #f60;
+            font-weight: bold;
+        }
+        /* 导航栏样式 */
+        .nav {
+            background: #f60;
+            display: flex;
+            padding: 0 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            background: #e55;
+        }
+        /* 主体容器样式 */
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        /* 左侧栏样式 */
+        .sidebar-left {
+            width: 200px;
+        }
+        .sidebar-left .box {
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .sidebar-left .box h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .sidebar-left .box p {
+            font-size: 14px;
+            line-height: 24px;
+            color: #666;
+        }
+        .sidebar-left .box .stars {
+            color: #f90;
+        }
+        .sidebar-left .box ul {
+            list-style: none;
+        }
+        .sidebar-left .box ul li {
+            font-size: 14px;
+            line-height: 28px;
+            color: #666;
+        }
+        /* 中间内容区样式 */
+        .main {
+            flex: 1;
+        }
+        .main .banner {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .main .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .main .hot-title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .main .hot-title .icon {
+            width: 20px;
+            height: 20px;
+            background: #f90;
+            border-radius: 50%;
+            margin-right: 5px;
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .main .goods-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main .goods {
+            display: flex;
+            align-items: center;
+            border: 1px solid #eee;
+            padding: 10px;
+        }
+        .main .goods .avatar {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+        }
+        .main .goods .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .main .goods .info {
+            flex: 1;
+        }
+        .main .goods .info h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .main .goods .info p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .main .goods .info .price {
+            font-size: 18px;
+            color: #f00;
+            font-weight: bold;
+        }
+        .main .goods .btn {
+            width: 80px;
+            height: 30px;
+            background: #f60;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* 右侧栏样式 */
+        .sidebar-right {
+            width: 200px;
+        }
+        .sidebar-right .box {
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .sidebar-right .box h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .sidebar-right .box ul {
+            list-style: none;
+        }
+        .sidebar-right .box ul li {
+            font-size: 14px;
+            line-height: 28px;
+            color: #666;
+        }
+        .sidebar-right .box .rank-list li {
+            display: flex;
+            align-items: center;
+        }
+        .sidebar-right .box .rank-list li span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #f60;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+	<body>
+    <!-- 顶部头部 -->
+    <div class="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/fluency/48/000000/book-stack.png" alt="logo">
+            书香校园二手网
+        </div>
+        <div class="contact">
+            校园安全中心<br>
+            <span class="phone">666-888-6666</span>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="#">首页</a>
+        <a href="#">教材专区</a>
+        <a href="#">考研资料</a>
+        <a href="#">电子产品</a>
+        <a href="#">求购信息</a>
+        <a href="#">退出登录</a>
+    </div>
+
+    <!-- 主体容器 -->
+    <div class="container">
+        <!-- 左侧栏 -->
+        <div class="sidebar-left">
+            <div class="box">
+                <h3>我的状态</h3>
+                <p>欢迎您：</p>
+                <p>信用等级：<span class="stars">★★★★★</span></p>
+                <p>待处理订单：0</p>
+            </div>
+            <div class="box">
+                <h3>图书分类</h3>
+                <ul>
+                    <li>计算机/软件</li>
+                    <li>外语/雅思</li>
+                    <li>经管/金融</li>
+                    <li>建筑/设计</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 中间内容区 -->
+        <div class="main">
+            <div class="banner">
+                <img src="background.png" alt="横幅图">
+            </div>
+            <div class="hot-title">
+                <span class="icon">热</span>热门推荐
+            </div>
+            <div class="goods-list">
+                <div class="goods">
+                    <div class="avatar">
+                        <img src="java.png" alt="卖家头像">
+                    </div>
+                    <div class="info">
+                        <h4>《Java核心技术》</h4>
+                        <p>大三学长退役，书很新，送笔记。</p>
+                        <p class="price">¥45.00</p>
+                    </div>
+                    <button class="btn">联系卖家</button>
+                </div>
+                <div class="goods">
+                    <div class="avatar">
+                        <img src= "math.png" alt="卖家头像">
+                    </div>
+                    <div class="info">
+                        <h4>《高等数学》</h4>
+                        <p>考研必备，重点已划，不做笔记也能考高分！</p>
+                        <p class="price">¥15.00</p>
+                    </div>
+                    <button class="btn">联系卖家</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧栏 -->
+        <div class="sidebar-right">
+            <div class="box">
+                <h3>最新公告</h3>
+                <ul>
+                    <li>[通知]系统维护公告...</li>
+                    <li>[活动]线下读书日...</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>求购榜</h3>
+                <ul class="rank-list">
+                    <li><span>1</span>二手 Kindle</li>
+                    <li><span>2</span>iPad air4</li>
+                    <li><span>3</span>考研红宝书</li>
+                    <li><span>4</span>卡西欧计算器</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+</html>

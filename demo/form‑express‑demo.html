@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>27</title>
+	<style type="text/css">
+		.menu{
+			background-color:#CAF3F4;
+			margin: 0 auto;
+			width: 700px;
+			padding-top: 20px;
+			padding-top: 20px;
+			font-family: "微软雅黑";
+			color: #000000;
+			font-size: 16px;
+			line-height: 35px;
+		}
+		.title{
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 20px;
+			
+		}
+		.container{
+			margin: 30px 25px;
+			border: 1px #FFF solid;
+			padding: 15px 10px 10px 10px ;
+			position: relative;  /*相对定位*/
+			border-radius: 5px;
+			background-color: azure;
+			width: 90%;
+			 
+			
+		}
+		.grouptitle{
+			color: #000000;
+			position: absolute;  /*绝对定位*/
+			top:-12px;
+			left: 15px;
+			background: #7AD7FB;
+			padding: 0 10px;
+			font-weight: bold;
+		}
+		.txt{
+			border: 1px #000 solid;
+			background-color:#FEFFE0;
+			margin-right: 20px;
+			height: 20px;
+			padding: 0 5px;
+		}
+		.txt:hover{
+			border: #14ADD7 1px solid;
+			background-color: #8BF2F5;
+		}
+		.name{
+			width: 80px;
+		}
+		.address{
+			width: 220px;
+		}
+		.goodName{
+			width: 300px;
+		}
+		.num,.weigth{
+			width: 50px;
+		}
+		span{
+			margin-left: 10px;
+		}
+		.btn{
+			border: 0px;
+			padding: 8px 16px;
+			margin: 10px;
+			cursor: pointer;
+			border-radius: 4px;
+			font-size: 16px;
+		}
+		.btn:hover{
+			border: 1px solid blue;
+			background: blue;
+		}
+		.slt{
+			width: 150px;
+			background: #CECECE;
+			font-size: 14px;
+			border: none;
+			height: 20px;
+			margin: 0;
+			padding: 0 5px;
+		}
+		.cbx,.rdo{
+			margin-right: 15px;
+		}
+		label{
+			margin-right: 15px;
+		}
+		.foot{
+			margin: auto;
+			text-align: center;
+			margin-top: 20px;
+			
+		}
+		.btn{
+			border: 0px;
+			padding: 8px 16px;
+			margin:  0 10px;
+			cursor: pointer;
+			border-radius: 4px;
+			font-size:16px;
+		}
+		.btn:hover{
+			border:  1px solid blue;
+			background:  #52BCF7;
+		}
+		.img{
+			height: 40px;
+			width: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+	  <div class="menu">
+	    <h1 class="title">增加快递信息</h1>
+	
+	   <div class="container">
+	  	 <div class="grouptitle">收货单</div>
+		    <span>发货人姓名：<input name="faname" type="text" class="txt name"/>
+		    </span>
+		    <span>发货人地址：<input name="faid" type="text" class="txt address"/>
+		    </span><br/>
+	        <span>发货人电话：<input name="fate" type="text" class="txt"/>
+		    </span>
+		    <span>发货人邮编：<input name="fayou" type="text" class="txt"/>
+		    </span>
+		   
+	   </div>
+		
+	   <div class="container">
+		   <div class="grouptitle">收货单</div>
+	    	<span>收货人姓名：<input name="sname" type="text" class="txt name"/>
+		    </span>
+		    <span>收货人地址：<input name="sid" type="text" class="txt address"/>
+		    </span><br/>
+	        <span>收货人电话：<input name="ste" type="text" class="txt"/>
+		    </span>
+		    <span>收货人邮编：<input name="syou" type="text" class="txt"/>
+		    </span><br/>
+			<span>地区：</span>
+		       <select class="slt">
+		        <option>江西</option>
+				<option>浙江</option>
+				<option>上海</option>
+		       </select>
+		    <span>包装：</span>
+			   <label><input type="checkbox" class="cbx" checked="checked" />纸箱</label>
+			   <label><input type="checkbox" class="cbx"  />木箱</label>
+			   <label><input type="checkbox" class="cbx" checked="checked" />快递袋</label>
+			   <label><input type="checkbox" class="cbx"  />其他</label>
+			   <br/>
+			<span>付款方式：</span>
+			   <label><input type="radio" name="pay" class="rdo"  />现金</label><img src="image/cash.png" class="img">
+			   <label><input type="radio" name="pay" class="rdo"  />支付宝</label><img src="image/zfb.webp" class="img">
+			   <label><input type="radio" name="pay" class="rdo"  />微信</label><img src="image/wechat.jpg" class="img">
+			   <label><input type="radio" name="pay" class="rdo"  />网银</label><img src="image/Union Pay.jpg" class="img">
+			   
+	
+		   
+	  </div>
+       <div class="container">
+		   <div class="grouptitle">货物信息</div>
+		      <span>货物名称：<input name="wuname" type="text" class="txt goodName"/>
+		     </span>
+		     <span>数量：<input name="wuid" type="text" class="txt num"/>
+	     	</span><br/>
+	        <span>重量：<input name="fate" type="text" class="txt weigth"/>
+		    </span>
+		    <span>发货时间：<input name="fayou" type="text" class="txt"/>
+		    </span>
+		   
+	   </div>
+	 <div class="foot">
+		 <input type="submit" class="btn" value="确定"/><img src="image/submit.webp" class="img" >
+		 <input type="reset" class="btn" value="取消"/><img src="image/cancel.webp" class="img" >
+      </div>
+		  	<div class="container">
+		<footer>用户须知
+1.当您（寄件人）选择委托我公司寄递您的邮件时，即代表您自身、收件人或与运单中所称的邮件具有利益关系的任何一方同意本服务条款。
+2. 寄件人应如实申报所交寄的邮件内容，准确、详细填写本单各项内容，不可只将邮政信箱作为收件人地址。收、寄件人的姓名、地址应用法文、英文或寄达国通晓文字填写，不得使用简称、缩写或暗语。因地址错误或不详所造成的投递延误责任，由寄件人自行承担。
+3.寄件人对交寄的邮件应采用适于国际运输的足以保护邮件的包装方式进行包装。
+4.不予寄递邮件
+寄件人同意其交运的邮件都是可运输的，有下列情形之一的不予寄递：
+（1）交寄物属于国际航空货运协会（IATA)、国际民用航空组织（ICAO）所禁止寄递物；
+（2）中国法律、行政法规、部门规章、快递行业主管部门及其他行政管理部门规定的禁止寄递物品或禁止流通、寄递的文件。
+（3）违反中国、目的国（地区）或可能过境国家（地区）适用的出口管制、国际运输、商业、金融及服务贸易等规定的物品;
+（5）包装不妥，可能危害人身安全、污染或损毁其它邮件、设备的物品；
+（6）违反知识产权保护相关法律法规且未出具相关证明的物品、智力成果等；
+（7）属于中国寄递管制的物品未出具相关的运输许可的。
+（8）其它不适合寄递条件的物品。
+</footer>
+		</div>
+	</div>
+
+	</form>
+	
+</body>
+</html>

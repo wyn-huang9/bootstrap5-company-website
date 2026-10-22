@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>兴趣爱好</title>
+<style>
+    body{
+        background: #EFDCEA;
+        font-family:"楷体";
+        font-size:16px;
+		text-align: center;
+    }
+    .main-title{
+        text-align:center;
+        color:#65D25A;
+        text-shadow:3px 3px 3px white;
+        letter-spacing:2px;
+        text-transform:uppercase;
+        background:linear-gradient(to left,yellow,pink);
+    }
+    .subtitle{
+        color:#FFE87A;
+        font-size:20px;
+        text-decoration:overline underline;
+        text-decoration-color:#FF3;
+        text-decoration-thickness:2px;
+		 text-align:center;
+    }
+    .cards-container{
+        width:90%;
+        margin:0 auto;
+    }
+    .interest-card{
+        background-color:rgba(255,255,204,0.9);
+        display:inline-block;
+        width:30%;
+        vertical-align:top;
+        padding:15px;
+        box-sizing:border-box;
+    }
+    .interest-title{
+		text-align:center;
+        color:#CCF;
+        font-size:24px;
+        white-space:nowrap;
+    }
+    .interest-image{
+        width:200px;
+        height:100px;
+        object-fit:cover;
+        border:3px solid #CFC;
+		align-content: center;
+    }
+    .image-caption{
+		text-align:center;
+        color: #CD76D0;
+    }
+    .interest-description{
+        width:px;
+        height:30px;
+        font-size:20px;
+        line-height:30px;
+        text-align:left;
+    }
+    .highlight{
+        color: #E86D6F;
+		font-size: 20px;
+		font-weight:bold;
+    }
+    .resoures{
+		font-family:  "Times New Roman";
+        color: #CFE73C;
+    }
+    .resoure-title{
+        line-height:10px;
+        font-family:"楷体";
+        font-size:16px;
+        font-weight:bold;
+        text-align:center;
+    }
+    .resoure-link{
+        color: #8BE7DE;
+		font-size: 10px;
+		text-align: justify;
+    }
+	.resoure-link:visited{
+        color: #8BE7DE;
+		font-size: 10px;
+		text-decoration: line-through;
+		color: black;
+		text-align: justify;
+    }
+	.resoure-link:hover{
+        color: #8BE7DE;
+		font-size: 10px;
+		text-decoration:overline underline ;
+		color: #E25254;
+		text-align: justify;
+    }
+	.resoure-link:active{
+        color: #8BE7DE;
+		font-size: 10px;
+		color: pink;
+		text-align: justify;
+    }
+</style>
+</head>
+<body>
+    <h1 class="main-title">我的兴趣卡片</h1>
+    <h2 class="subtitle">我的爱好世界</h2>
+    <div class="cards-container">
+        <div class="interest-card">
+            <h2 class="interest-title">美食</h2>
+            <img src="food.jpg" alt="食物" class="interest-image">
+            <p class="image-caption">美食</p>
+            <p class="interest-description">
+                我爱吃美食。<span class="highlight">世界上有好多好吃的。</span>比如火锅，烤肉等等。
+            </p><br/><br/>
+            <div class="resoures">
+                <h3 class="resoure-title">学习资源</h3>
+                <a href="https://www.xiachufang.com/" class="resoure-link">中文食谱社区</a><br/>
+                <a href="https://www.daydaycook.com/" class="resoure-link">精致美食视频与生活方式</a><br/>
+                <a href="http://www.meishichina.com/" class="resoure-link">综合性的中文美食门户</a>
+            </div>
+        </div>
+    <div class="interest-card">
+            <h2 class="interest-title">睡觉</h2>
+            <img src= "sleep.jpg" alt="睡觉" class="interest-image">
+            <p class="image-caption">睡觉</p>
+            <p class="interest-description">
+                我爱睡觉。<span class="highlight">睡觉令人身心愉悦。</span>周末可以睡十个小时。
+            </p><br/><br/>
+            <div class="resoures">
+                <h3 class="resoure-title">学习资源</h3>
+                <a href="https://www.thensf.org/" class="resoure-link">美国国家睡眠基金会 - 权威科普</a><br/>
+                <a href="https://www.sleepfoundation.org/" class="resoure-link"> Sleep Foundation - 详尽的实用指南</a><br/>
+                <a href=" https://sleep.hms.harvard.edu/education-training/sleep-medicine" class="resoure-link">哈佛医学院睡眠医学部 - 深度医学知识</a>
+            </div>
+        </div>
+		<div class="interest-card">
+            <h2 class="interest-title">打原神</h2>
+            <img src= "yuanshen.jpg" alt="原神" class="interest-image">
+            <p class="image-caption">原神</p>
+            <p class="interest-description">
+                我爱打原神。<span class="highlight">打原神令我忘记烦恼。</span>此外我还喜欢打王者荣耀，抓大鹅等等。
+            </p><br/><br/>
+            <div class="resoures">
+                <h3 class="resoure-title">学习资源</h3>
+                <a href="https://bbs.mihoyo.com/ys/" class="resoure-link">米游社 - 官方社区</a><br/>
+                <a href="https://wiki.biligame.com/ys/" class="resoure-link">原神WIKI - 萌娘百科</a><br/>
+                <a href="https://bbs.nga.cn/thread.php?fid=606" class="resoure-link">NGA原神社区</a>
+            </div>
+        </div>
+    </div>
+	<footer align="center">黄项文的兴趣卡片</footer>
+</body>
+</html>
